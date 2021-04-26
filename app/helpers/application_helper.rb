@@ -15,4 +15,30 @@ module ApplicationHelper
       link_to('Like!', post_likes_path(post_id: post.id), method: :post)
     end
   end
+
+  def invite_or_invited_btn(user)
+    return unless current_user != user
+
+    return 'Friend' if current_user.friend?(user)
+
+    if current_user.pending_friends.include?(user) || current_user.friend_requests.include?(user)
+      'Invite pending'
+    else
+      link_to('Add Friend?', user_friendships_path(user_id: user.id), method: :post, class: 'profile-link')
+    end
+  end
+
+  def accept_friendship(friendship)
+    show_user = User.find_by(id: params[:id])
+    (return unless current_user == show_user)
+
+    link_to('Accept?', user_friendship_path(user_id: friendship.id), method: :put, class: 'profile-link')
+  end
+
+  def reject_friendship(friendship)
+    show_user = User.find_by(id: params[:id])
+    (return unless current_user == show_user)
+
+    link_to('Reject?', user_friendship_path(user_id: friendship.id), method: :delete, class: 'profile-link')
+  end
 end

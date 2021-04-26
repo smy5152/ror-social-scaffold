@@ -1,93 +1,96 @@
-# Scaffold for social media app with Ruby on Rails
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+# Project : STAY IN TOUCH
+> The project builds 
+## Scaffold for social media app with Ruby on Rails
+> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students. 
+#### Highlight: Users->List, Users->Invites Friends, Users->Gets Invited By Friends, 
+![DESIGN](docs/ERD.png)
+![TESTS](docs/Relations.PNG)
 
-## Built With
+![APPLICATION](docs/AllUsers.PNG)
+![1](docs/Timelinefriendsposts.PNG)
+![2](docs/Timelinefriendsposts2.PNG)
+![3](docs/MePending.PNG)
+![4](docs/InvitedPending.PNG)
+![5](docs/FriendsProfile.PNG)
+![6](docs/)
+![7](docs/)
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+### Built With
 
-## Live Demo
-
-TBA
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Ruby: 2.6.3
-Rails: 5.2.3
-Postgres: >=9.5
-
+- Ruby, Ruby on Rails, VS Code Editor
+- Active Records
+- Devise Gem
+- Forms & Helpers
+- Rspec, Capybara, Selenium
+- Browser: Chrome {change/override in this File, Last Line: ``` spec\rails_helper.rb ```}
+### Getting Started
+#### Model generated:
+- User Authentication
+  - Signup
+  - Signin
+- All Users
+  - View Users Profile & Posts
+    - Add Friend From Individual User Profile
+    - Accept/Reject Invitation
+  - Add Friend From All Users List
+  - View Invite Pending Status
+- Timeline
+  - Posts ordered Recent First
+  - Posts from Friends only
 ### Setup
+* To clone this repository, open your Terminal and execute the following command:
+``` git clone https://github.com/smy5152/Private-events.git ```
+### Run
+* Change into the folder
+``` cd private-only ```
+* Install js dependencies
+``` yarn install ```
+* Install gems
+``` bundle install ```
+* Run Database migrations
+``` rails db:create ```
+``` rails db:migrate ```
+* Rails Local Server
+``` rails server ``` 
+* Launch Local App
+- Open your browser and type http://localhost:3000
+### How to run the test suite
+#### Run tests
+``` rpsec --format documentation  ```
+#### USER: CREATE, FRIENDSHIPS: ADD/REJECT/ACCEPT
+User
+  a user can be created
+    user is valid (name,email,pwd: present))
+    user is invalid (name:nil)
+  friendship request created
+    user can add friend requests
+    user accepts friend requests
+    user rejects friend requests
+Finished in 0.33498 seconds (files took 7.53 seconds to load)
+5 examples, 0 failures
+ rspec .\spec\auth_spec.rb
+#### BROWSER TEST: With Capybara/Selenium
+Sign in
+  signs me in
+.
+Finished in 24.09 seconds (files took 5.29 seconds to load)
+1 example, 0 failures
 
-Instal gems with:
-
-```
-bundle install
-```
-
-Setup database with:
-
-```
-   rails db:create
-   rails db:migrate
-```
-
-### Github Actions
-
-To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
-
-1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
-2. Create the `feature/branch` and push.
-3. Start working on your milestone as usual.
-4. Open a PR from the `feature/branch` when your work is done.
-
-
-### Usage
-
-Start server with:
-
-```
-    rails server
-```
-
-Open `http://localhost:3000/` in your browser.
-
-### Run tests
-
-```
-    rpsec --format documentation
-```
-
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
-### Deployment
-
-TBA
-
+### How To:
+* Run Rails console
+``` rails console ```
 ## Authors
-
-TBA
-
+🧑‍💻 **Shabbir**
+- GitHub: [@smy5152](https://github.com/smy5152)
+- Twitter: [@smy5152](https://twitter.com/smy5152)
+- LinkedIn: [Shabbir Yamani](https://www.linkedin.com/in/shabbirmyamani/)
 ## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
-
+Contributions, issues, and feature requests are welcome!
 ## Show your support
-
 Give a ⭐️ if you like this project!
-
 ## Acknowledgments
-
-TBA
-
+- [Micoverse team](https://www.microverse.org/)
 ## 📝 License
-
-TBA
-
+This project is [MIT](LICENSE) licensed.

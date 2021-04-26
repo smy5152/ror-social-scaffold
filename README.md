@@ -59,6 +59,25 @@
 ### How to run the test suite
 #### Run tests
 ``` rpsec --format documentation  ```
+#### USER: CREATE, FRIENDSHIPS: ADD/REJECT/ACCEPT
+User
+  a user can be created
+    user is valid (name,email,pwd: present))
+    user is invalid (name:nil)
+  friendship request created
+    user can add friend requests
+    user accepts friend requests
+    user rejects friend requests
+Finished in 0.33498 seconds (files took 7.53 seconds to load)
+5 examples, 0 failures
+ rspec .\spec\auth_spec.rb
+#### BROWSER TEST: With Capybara/Selenium
+Sign in
+  signs me in
+.
+Finished in 24.09 seconds (files took 5.29 seconds to load)
+1 example, 0 failures
+
 ### How To:
 * Run Rails console
 ``` rails console ```

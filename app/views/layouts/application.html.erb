@@ -20,6 +20,7 @@
       </div>
       <% if current_user %>
         <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <hr/><span style="color: black; font-weight: 800">&nbsp;Hello,<%= current_user.name %></span>
       <% else %>
         <%= link_to 'Sign in', user_session_path %>
       <% end %>

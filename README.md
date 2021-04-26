@@ -1,22 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project : STAY IN TOUCH
-> The project builds 
+> The project builds on all the ruby & rails concepts learnt so far. Implements quick and easy authentication with `Devise`. Integrates MVC patterns beautifully to complete the Friendships Framework that is so prevalent in most social media websites.
+Unit Tests using Rspec & Capybara touch the surface on using TDD for all projects.
 ## Scaffold for social media app with Ruby on Rails
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students. 
+> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for students. 
 #### Highlight: Users->List, Users->Invites Friends, Users->Gets Invited By Friends, 
 ![DESIGN](docs/ERD.png)
-![TESTS](docs/Relations.PNG)
-
 ![APPLICATION](docs/AllUsers.PNG)
 ![1](docs/Timelinefriendsposts.PNG)
 ![2](docs/Timelinefriendsposts2.PNG)
 ![3](docs/MePending.PNG)
 ![4](docs/InvitedPending.PNG)
 ![5](docs/FriendsProfile.PNG)
-![6](docs/)
-![7](docs/)
-
 ### Built With
 
 - Ruby, Ruby on Rails, VS Code Editor
@@ -60,24 +56,26 @@
 #### Run tests
 ``` rpsec --format documentation  ```
 #### USER: CREATE, FRIENDSHIPS: ADD/REJECT/ACCEPT
-User
-  a user can be created
-    user is valid (name,email,pwd: present))
-    user is invalid (name:nil)
-  friendship request created
-    user can add friend requests
-    user accepts friend requests
-    user rejects friend requests
+- User
+  - a user can be created
+    - user is valid (name,email,pwd: present))
+    - user is invalid (name:nil)
+  - friendship request created
+    - user can add friend requests
+    - user accepts friend requests
+    - user rejects friend requests
+```
 Finished in 0.33498 seconds (files took 7.53 seconds to load)
 5 examples, 0 failures
  rspec .\spec\auth_spec.rb
+```
 #### BROWSER TEST: With Capybara/Selenium
-Sign in
-  signs me in
-.
+- Sign in
+  - signs me in
+```
 Finished in 24.09 seconds (files took 5.29 seconds to load)
 1 example, 0 failures
-
+```
 ### How To:
 * Run Rails console
 ``` rails console ```

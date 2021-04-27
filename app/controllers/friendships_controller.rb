@@ -10,7 +10,7 @@ class FriendshipsController < ApplicationController
   end
 
   def update
-    friend = User.find(params[:user_id])
+    friend = User.find_by(id: params[:user_id])
     current_user.confirm_friend(friend)
     redirect_to user_path, notice: "#{friend.name} is now your friend. Congrats :P"
   end

@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe User, type: :model do
   let(:user1) { User.create(name: 'user1', email: 'user1@myemail.com', password: 'password') }
   let(:user2) { User.create(name: 'user2', email: 'user2@myemail.com', password: 'password') }
@@ -28,7 +26,6 @@ RSpec.describe User, type: :model do
       friendship.save
       user2.confirm_friend(user1)
       friends = user1.friend?(user2)
-
       expect(friends).to eq(true)
     end
 
@@ -36,10 +33,7 @@ RSpec.describe User, type: :model do
       friendship = user1.friendships.new(friend_id: user2.id)
       friendship.save
       user2.reject_friend(user1)
-      friends = user1.friend?(user2)
-
-      expect(friends).to eq(false)
-      expect(user1.inverse_friendships.size).to eq(0)
+      expect(user1.friend?(user2)).to be false
     end
   end
 end

@@ -1,4 +1,4 @@
-require 'capybara/rspec'
+# require 'capybara/rspec'
 
 RSpec.describe 'Sign in', type: :system do
   before :each do

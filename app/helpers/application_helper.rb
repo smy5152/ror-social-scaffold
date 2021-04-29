@@ -24,7 +24,7 @@ module ApplicationHelper
     return 'Friend' if current_user.friend?(user)
     return if current_user_or_friend?(user)
 
-    if current_user.pending_friendship?(user)
+    if user.pending_friendship?(current_user)
       'Invite pending'
     else
       unless current_user.pending_friendship?(user)

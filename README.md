@@ -46,6 +46,9 @@ Unit Tests using Rspec & Capybara touch the surface on using TDD for all project
 * Install gems
 ``` bundle install ```
 * Run Database migrations
+- you may run into ID errors since not all users have existed on all DBs and branches...
+- follow this process to start with fresh database
+``` rails db:drop:_unsafe ```
 ``` rails db:create ```
 ``` rails db:migrate ```
 * Rails Local Server

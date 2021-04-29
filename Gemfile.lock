@@ -282,7 +282,7 @@ DEPENDENCIES
   selenium-webdriver
   spring (~> 2.1, >= 2.1.1)
   spring-watcher-listen (~> 2.0, >= 2.0.1)
-  sqlite3 (~> 1.4)
+  sqlite3
   turbolinks (~> 5.2, >= 5.2.1)
   tzinfo-data
   uglifier (~> 4.2)

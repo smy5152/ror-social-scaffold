@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project : STAY IN TOUCH
+# LIVE APP: - !(StayInTouch)[https://aqueous-brook-51193.herokuapp.com/]
+
 > The project builds on all the ruby & rails concepts learnt so far. Implements quick and easy authentication with `Devise`. Integrates MVC patterns beautifully to complete the Friendships Framework that is so prevalent in most social media websites.
 Unit Tests using Rspec & Capybara touch the surface on using TDD for all projects.
 ## Scaffold for social media app with Ruby on Rails
@@ -53,7 +55,7 @@ Unit Tests using Rspec & Capybara touch the surface on using TDD for all project
 * Launch Local App
 - Open your browser and type http://localhost:3000
 * Launch Live App
-- ``` !(StayInTouch)[] ```
+- !(StayInTouch)[https://aqueous-brook-51193.herokuapp.com/]
 ### How to run the test suite
 #### Run tests
 ``` rpsec --format documentation  ```

@@ -52,6 +52,8 @@ Unit Tests using Rspec & Capybara touch the surface on using TDD for all project
 ``` rails server ``` 
 * Launch Local App
 - Open your browser and type http://localhost:3000
+* Launch Live App
+- ``` !(StayInTouch)[] ```
 ### How to run the test suite
 #### Run tests
 ``` rpsec --format documentation  ```

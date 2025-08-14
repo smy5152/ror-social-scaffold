@@ -92,7 +92,5 @@ Finished in 24.09 seconds (files took 5.29 seconds to load)
 Contributions, issues, and feature requests are welcome!
 ## Show your support
 Give a ⭐️ if you like this project!
-## Acknowledgments
-- [Micoverse team](https://www.microverse.org/)
 ## 📝 License
 This project is [MIT](LICENSE) licensed.
